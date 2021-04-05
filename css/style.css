@@ -24,7 +24,7 @@ header {
 
 nav > ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px 10px;
     float: right;
 }
 
@@ -33,7 +33,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-    padding: 0 15px;
+    padding: 0 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: #2622629;
@@ -54,7 +54,10 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     line-height: 1.4;
     text-align: center;
 }
@@ -93,6 +96,13 @@ a:hover {
     text-decoration: underline;
 }
 
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Buttons */
+
 .button {
     display: inline-block;
     background-color: #caebfa;
@@ -121,30 +131,16 @@ a:hover {
     color: #262262;
 }
 
-/* Layout styling */
+/* Images */
 
-.container {
-    padding: 0 15px;
-}
-
-.row {
-    margin: 25px 0;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.image {
+    max-width: 1000px;
 }
 
 .logo {
     max-width: 250px;
     float: left;
     margin: 5px 25px;
-}
-
-.image {
-    max-width: 1000px;
 }
 
 .profile-pic {
@@ -155,14 +151,45 @@ a:hover {
     margin: 0 5px;
 }
 
+/* Alignment/Spacing/Columns */
+
 .center-align {
     text-align: center;
 }
 
-ul {
-    text-align: center;
-    list-style-position: inside;
+.container {
+    padding: 0 15px;
 }
+
+.row {
+    margin: 25px 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-lg-8 {
+    width: 60%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+/* Lines */
+
+hr.solid {
+    border-top: 3px solid #2622629;
+}
+
+/* Links */
 
 #hero h1 {
     text-align: center;
@@ -172,6 +199,7 @@ ul {
 #hero {
     background-color: #caebfa;
     width: 100%;
+    padding: 2px 5px;
     display: block;
 }
 
@@ -186,7 +214,8 @@ ul {
 
 #life-notes-highlight {
     background-color: #f0fbff;
-    width: 80%;
+    width: 100%;
+    padding: 10px;
 }
 
 #contact {
@@ -195,25 +224,51 @@ ul {
     margin-top: 20px;
 }
 
+/* Animation */
+
+.apple {
+    fill: #ffa51e;
+    margin: 0px;
+    animation-duration: 3s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    max-width: 100px;
+    padding: 10px;
+}
+
+@keyframes color-change {
+    from {
+        transform: translate(500px);
+    }
+    to {
+        transform: translate(1000px, 0px);
+    }
+}
+
 /* Media Queries */
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
 
-  nav {
-    width: auto;
-    float: center;
-    margin-top: 4px;
-  }
+    nav {
+        width: auto;
+        float: center;
+        margin-top: 4px;
+    }
 
-  .col-md-6 {
-    width: 50%;
-  }
+    .col-md-6 {
+        width: 50%;
+    }
 
+    .logo {
+        float: center;
+    }
 }
 
 /* Large devices (1024px or larger) */
@@ -221,29 +276,7 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
- }
-
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
-/* X-large devices (1440px or larger) */
-@media only screen and (min-width: 1440px) {
-}
-
- }
-
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-.col-lg-8 {
-}
-
-.col-xl-4 {
-}
-
-[class*="col-"] {
-  float: left;
