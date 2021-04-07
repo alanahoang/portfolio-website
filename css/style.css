@@ -1,9 +1,10 @@
 /*
 Colors
 Light Blue: #CAEBFA;
-Dark Blue: #2622629;
+Dark Blue: #262262;
 Hyperlink Blue: #80B8D1;
 Background: #F0FBFF;
+Divider: #CAEBFA
 */
 
 /* Layout styling */
@@ -36,7 +37,7 @@ nav > ul > li > a {
     padding: 0 20px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #2622629;
+    color: #262262;
     text-align: center;
 }
 
@@ -101,9 +102,14 @@ ul {
     list-style-position: inside;
 }
 
+li {
+    text-align: left;
+}
+
 /* Buttons */
 
 .button {
+    border-radius: 6px;
     display: inline-block;
     background-color: #caebfa;
     color: #ffffff;
@@ -147,6 +153,10 @@ ul {
     max-width: 500px;
 }
 
+.project-icon {
+    max-width: 500px;
+}
+
 .social-media-icon {
     margin: 0 5px;
 }
@@ -155,6 +165,10 @@ ul {
 
 .center-align {
     text-align: center;
+}
+
+.left-align h2 {
+    text-align: left;
 }
 
 .container {
@@ -186,14 +200,15 @@ ul {
 /* Lines */
 
 hr.solid {
-    border-top: 3px solid #2622629;
+    border-top: 1px solid #caebfa;
 }
 
 /* Links */
 
 #hero h1 {
     text-align: center;
-    padding: 0.67em 0;
+    font-family: "Quicksand", sans-serif;
+    padding: 30px;
 }
 
 #hero {
@@ -215,7 +230,7 @@ hr.solid {
 #life-notes-highlight {
     background-color: #f0fbff;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 
 #contact {
@@ -229,21 +244,42 @@ hr.solid {
 .apple {
     fill: #ffa51e;
     margin: 0px;
-    animation-duration: 3s;
-    animation-name: color-change;
+    animation-duration: 5s;
+    animation-name: direction;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    max-width: 250px;
+    padding: 10px;
+}
+
+.happy {
+    fill: #ffa51e;
+    margin: 0px;
+    animation-duration: 3s;
+    animation-name: direction2;
+    animation-iteration-count: 0;
     animation-direction: alternate;
     animation-timing-function: linear;
     max-width: 100px;
     padding: 10px;
 }
 
-@keyframes color-change {
+@keyframes direction {
     from {
-        transform: translate(500px);
+        transform: translate(1000px);
     }
     to {
-        transform: translate(1000px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes direction2 {
+    from {
+        transform: translate(1000px);
+    }
+    to {
+        transform: translate(0px, 0px);
     }
 }
 
@@ -258,16 +294,12 @@ hr.solid {
 
     nav {
         width: auto;
-        float: center;
+        float: right;
         margin-top: 4px;
     }
 
     .col-md-6 {
         width: 50%;
-    }
-
-    .logo {
-        float: center;
     }
 }
 
@@ -279,4 +311,12 @@ hr.solid {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.col-lg-7 {
+    width: 60%;
+}
+
+.col-lg-5 {
+    width: 40%;
 }
