@@ -143,6 +143,10 @@ li {
     max-width: 1000px;
 }
 
+.icon {
+    max-width: 1000px;
+}
+
 .logo {
     max-width: 250px;
     float: left;
@@ -293,6 +297,7 @@ hr.solid {
     .col-md-6 {
         width: 50%;
     }
+
 }
 
 /* Large devices (1024px or larger) */
