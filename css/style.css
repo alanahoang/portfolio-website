@@ -15,7 +15,6 @@ Divider: #CAEBFA
 
 header {
     background-color: #f0fbff;
-    text-align: unset;
     padding: 10px 0;
     box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.37);
     position: fixed;
@@ -34,11 +33,13 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-    padding: 0 20px;
+    padding: 5px 20px;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 18px;
     color: #262262;
     text-align: center;
+    margin: 5px;
 }
 
 main {
@@ -50,9 +51,15 @@ body {
     font-family: "Karla", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1;
     color: #262262;
     text-align: center;
+}
+
+p {
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 h1,
@@ -130,11 +137,14 @@ li {
     background-color: #caebfa;
     color: #262262;
     text-transform: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .button.contact:hover {
     background-color: #80b8d1;
     color: #262262;
+    transition: 0.2s;
 }
 
 /* Images */
@@ -153,6 +163,10 @@ li {
     margin: 5px 25px;
 }
 
+.navicon {
+    color: #black;
+}
+
 .profile-pic {
     max-width: 500px;
 }
@@ -165,6 +179,24 @@ li {
     margin: 0 5px;
 }
 
+/* Navigations */
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+}
+
 /* Alignment/Spacing/Columns */
 
 .center-align {
@@ -173,6 +205,7 @@ li {
 
 .left-align h2 {
     text-align: left;
+    padding-left: 20px;
 }
 
 .container {
@@ -197,6 +230,7 @@ li {
 
 hr.solid {
     border-top: 1px solid #caebfa;
+    margin-top: 30px;
 }
 
 /* Links */
@@ -214,6 +248,14 @@ hr.solid {
     display: block;
 }
 
+#highlight {
+    background-color: #f0fbff;
+    width: 100%;
+    padding: 18px;
+    border: 2px solid #262262;
+    border-radius: 6px;
+}
+
 #work {
     background-color: #ffffff;
     padding: 3px 0;
@@ -221,12 +263,6 @@ hr.solid {
 
 #life-notes {
     margin-top: 5px;
-}
-
-#life-notes-highlight {
-    background-color: #f0fbff;
-    width: 100%;
-    padding: 20px;
 }
 
 #contact {
@@ -283,6 +319,10 @@ hr.solid {
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
+    .col-md-6 {
+        width: 50%;
+    }
+
     header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -294,10 +334,9 @@ hr.solid {
         margin-top: 4px;
     }
 
-    .col-md-6 {
-        width: 50%;
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
     }
-
 }
 
 /* Large devices (1024px or larger) */
@@ -309,10 +348,18 @@ hr.solid {
     .col-lg-5 {
         width: 40%;
     }
-}
 
-.container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
 }

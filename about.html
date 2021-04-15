@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <meta charset="utf-8" />
         <link href="img/favicon.png" rel="shortcut icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <meta charset="utf-8" />
         <meta name="author" content="Alana Hoang" />
         <meta name="description" content="About" />
         <title>About Alana Hoang</title>
@@ -13,12 +13,12 @@
 
     <body>
         <header>
-            <div>
+            <div class="container">
                 <img src="img/logo.png" alt="Logo" class="logo" />
                 <nav>
                     <ul>
                         <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a class="active" href="about.html">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -39,18 +39,19 @@
                         </picture>
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h2>Story</h2>
-                        <p>
-                            Hi there. I am a designer with some background in design. I have done graphic design projects in the past (college) and have an understanding on how to use design tools such as Illustrator or Photoshop. I am
-                            someone who enjoys being creative and I know how to bring emotion to my work.
-                        </p>
-                        <p>During my spare time, I like to draw animals, watch anime, and collect cute things. I also enjoy shopping for cute clothes and admiring artists' work.</p>
-                        <p>
-                            As for experience, I have not worked for a design position yet. However, I plan to continue my education to learn new skills for my next job search. I have become interested in UI design and front-end development
-                            because I want to work with technology and art. I long to work in a place that is more visual, where I am allowed to be creative. I look forward to learning more about design and implementing those design skills
-                            into the work I do in the future.
-                        </p>
-                        <a href="files/resume.pdf" class="button contact">Download my resume</a>
+                        <div id="highlight">
+                            <p>
+                                Hi there. I am a designer with some background in design. I have done graphic design projects in the past (college) and have an understanding on how to use design tools such as Illustrator or Photoshop. I am
+                                someone who enjoys being creative and I know how to bring emotion to my work.
+                            </p>
+                            <p>During my spare time, I like to draw animals, watch anime, and collect cute things. I also enjoy shopping for cute clothes and admiring artists' work.</p>
+                            <p>
+                                As for experience, I have not worked for a design position yet. However, I plan to continue my education to learn new skills for my next job search. I have become interested in UI design and front-end
+                                development because I want to work with technology and art. I long to work in a place that is more visual, where I am allowed to be creative. I look forward to learning more about design and implementing
+                                those design skills into the work I do in the future.
+                            </p>
+                            <a href="files/resume.pdf" class="button contact">Download my resume</a>
+                        </div>
                     </div>
                 </div>
 
@@ -136,7 +137,7 @@
             </div>
         </footer>
 
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/scripts.js"></script>
-
     </body>
 </html>
