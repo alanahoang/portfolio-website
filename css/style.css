@@ -15,7 +15,7 @@ Divider: #CAEBFA
 
 header {
     background-color: #f0fbff;
-    padding: 10px 0;
+    padding: 20px 0;
     box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.37);
     position: fixed;
     width: 100%;
@@ -43,7 +43,7 @@ nav > ul > li > a {
 }
 
 main {
-    padding-top: 133px;
+    padding-top: 100px;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -91,7 +91,7 @@ h4 {
 }
 
 img {
-    width: 100%;
+    width: 90%;
 }
 
 a {
@@ -111,6 +111,11 @@ ul {
 
 li {
     text-align: left;
+}
+
+footer {
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 /* Buttons */
@@ -164,14 +169,10 @@ li {
 }
 
 .navicon {
-    color: #black;
+    color: #ffffff
 }
 
 .profile-pic {
-    max-width: 500px;
-}
-
-.project-icon {
     max-width: 500px;
 }
 
@@ -188,6 +189,18 @@ li {
 .navtoggle,
 .navtoggle.responsive {
     position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 0px 0px 0px;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 0px 0px;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .navtoggle li .icon {
@@ -238,7 +251,14 @@ hr.solid {
 #hero h1 {
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    padding: 30px;
+    font-size: 46px;
+    padding-top: 10px;
+}
+
+#hero p {
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-size: 26px;
 }
 
 #hero {
@@ -252,13 +272,13 @@ hr.solid {
     background-color: #f0fbff;
     width: 100%;
     padding: 18px;
-    border: 2px solid #262262;
+    border: 2px solid #CAEBFA;
     border-radius: 6px;
+    margin: 30px;
 }
 
 #work {
     background-color: #ffffff;
-    padding: 3px 0;
 }
 
 #life-notes {
@@ -319,13 +339,9 @@ hr.solid {
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
+
     .col-md-6 {
         width: 50%;
-    }
-
-    header {
-        text-align: unset;
-        padding: 20px 0 13px;
     }
 
     nav {
@@ -337,10 +353,15 @@ hr.solid {
     .navtoggle li:not(:last-child) {
         display: inline-block;
     }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
 }
 
 /* Large devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
+
     .col-lg-7 {
         width: 60%;
     }
