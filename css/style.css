@@ -20,16 +20,14 @@ header {
     position: fixed;
     width: 100%;
     height: 12%;
+
 }
+
 
 nav > ul {
     list-style-type: none;
     padding: 10px 10px;
     float: right;
-}
-
-nav > ul > li {
-    display: inline-block;
 }
 
 nav > ul > li > a {
@@ -170,6 +168,7 @@ footer {
 
 .navicon {
     color: #262262;
+    padding-top: 20px;
 }
 
 .profile-pic {
@@ -183,6 +182,7 @@ footer {
 /* Navigations */
 
 .navtoggle li:not(:last-child) {
+    background-color: #f0fbff;
     display: none;
 }
 
@@ -191,23 +191,27 @@ footer {
     position: relative;
 }
 
-.navtoggle.responsive nav {
-  padding: 0px 0px 0px;
+.navtoggle li .navicon {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
 }
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0px;
+}
+
 .navtoggle.responsive li  {
   display: block;
-  padding: 0px 0px;
+  display: center;
+  padding: 20px 150px 5px;
+  border-top: 1px solid #CAEBFA;
 }
 
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
-}
-
-.navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
 }
 
 /* Alignment/Spacing/Columns */
@@ -246,6 +250,16 @@ hr.solid {
     margin-top: 30px;
 }
 
+/* Boxes */
+
+.highlight {
+    background-color: #f0fbff;
+    padding: 18px;
+    margin-bottom: 26px;
+    border: 2px solid #CAEBFA;
+    border-radius: 6px;
+}
+
 /* Links */
 
 #hero h1 {
@@ -266,15 +280,6 @@ hr.solid {
     width: 100%;
     padding: 2px 5px;
     display: block;
-}
-
-#highlight {
-    background-color: #f0fbff;
-    width: 100%;
-    padding: 18px;
-    border: 2px solid #CAEBFA;
-    border-radius: 6px;
-    margin: 30px;
 }
 
 #work {
@@ -344,10 +349,13 @@ hr.solid {
         width: 50%;
     }
 
-    nav {
-        width: auto;
-        float: right;
-        margin-top: 4px;
+    nav > ul {
+      margin: 1em 0;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        position: center;
     }
 
     .navtoggle li:not(:last-child) {
@@ -374,10 +382,6 @@ hr.solid {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    nav > ul > li {
-        display: inline-block;
     }
 
     .navtoggle li:last-child {
