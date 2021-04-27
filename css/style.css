@@ -20,7 +20,6 @@ header {
     position: fixed;
     width: 100%;
     height: 12%;
-
 }
 
 nav > ul {
@@ -111,8 +110,8 @@ li {
 }
 
 footer {
-    padding-bottom: 5px;
     padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 /* Buttons */
@@ -139,7 +138,7 @@ footer {
     background-color: #caebfa;
     color: #262262;
     text-transform: none;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -157,17 +156,14 @@ footer {
 
 .icon {
     max-width: 641px;
+    color: #262262;
+    padding-top: 20px;
 }
 
 .logo {
     max-width: 250px;
     float: left;
     margin: 5px 25px;
-}
-
-.navicon {
-    color: #262262;
-    padding-top: 20px;
 }
 
 .profile-pic {
@@ -190,7 +186,7 @@ footer {
     position: relative;
 }
 
-.navtoggle li .navicon {
+.navtoggle li .icon {
     position: absolute;
     right: 10px;
     top: 2px;
@@ -259,13 +255,29 @@ hr.solid {
     border-radius: 6px;
 }
 
+/* Spacing */
+
+.contact-me p {
+    font-size: 18px;
+    margin: 3px;
+}
+
+.email {
+  padding: 20px;
+}
+
+.table-of-contents p {
+  margin: 1px;
+  text-align: center;
+  padding: 6px;
+}
+
 /* Links */
 
 #hero h1 {
     text-align: center;
     font-family: "Quicksand", sans-serif;
     font-size: 46px;
-    padding-top: 10px;
 }
 
 #hero p {
@@ -293,6 +305,140 @@ hr.solid {
     background-color: #f0fbff;
     padding-top: 5px;
     margin-top: 20px;
+}
+
+#overview p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#purpose-and-context p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#design-process {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#objective p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#approach p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#approach img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#approach-examples {
+  margin: 5px;
+}
+
+#inspiration p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#inspiration img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#colors p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#colors img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#iconography p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#iconography img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#typography p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#typography img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#buttons  p{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#buttons img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#low-fidelty-wireframes p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#low-fidelty-wireframes img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#mid-fidelty-wireframes p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#mid-fidelty-wireframes img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#high-fidelty-wireframes p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#high-fidelty-wireframes img {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#challenges p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#takeaways p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#conclusion p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#mock-ups p {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /* Animation */
@@ -339,10 +485,13 @@ hr.solid {
     }
 }
 
-/* Media Queries */
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
+
+  nav > ul {
+    margin: 1em 0;
+  }
 
     .col-md-6 {
         width: 50%;
@@ -364,6 +513,7 @@ hr.solid {
     .navtoggle li:last-child {
         display: none;
     }
+
 }
 
 /* Large devices (1024px or larger) */
@@ -386,4 +536,5 @@ hr.solid {
     .navtoggle li:last-child {
         display: none;
     }
+
 }
