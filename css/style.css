@@ -200,7 +200,6 @@ footer {
 
 .navtoggle.responsive li  {
   display: block;
-  display: center;
   padding: 20px 150px 5px;
   border-top: 1px solid #CAEBFA;
 }
@@ -503,7 +502,6 @@ hr.solid {
 
     nav > ul > li {
         display: inline-block;
-        position: center;
     }
 
     .navtoggle li:not(:last-child) {
