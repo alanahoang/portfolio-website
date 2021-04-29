@@ -2,9 +2,8 @@
 Colors
 Light Blue: #CAEBFA;
 Dark Blue: #262262;
-Hyperlink Blue: #80B8D1;
-Background: #F0FBFF;
-Divider: #CAEBFA
+Steel Blue: #80B8D1;
+Elegant Blue: #F0FBFF;
 */
 
 /* Layout styling */
@@ -15,7 +14,7 @@ Divider: #CAEBFA
 
 header {
     background-color: #f0fbff;
-    padding: 20px 0;
+    padding: 16px 0;
     box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.37);
     position: fixed;
     width: 100%;
@@ -23,7 +22,7 @@ header {
 
 nav > ul {
     list-style-type: none;
-    padding: 10px 10px;
+    padding: 20px 0px;
     float: right;
 }
 
@@ -147,6 +146,21 @@ footer {
     transition: 0.2s;
 }
 
+.btnlinks {
+    border-radius: 6px;
+    background-color: #caebfa;
+    color: #262262;
+    width: 10px;
+    height: 10px;
+}
+
+.btnlinks:hover {
+  background-color: #80b8d1;
+  color: #262262;
+  transition: 0.2s;
+  transition-duration: 0.2s;
+}
+
 /* Images */
 
 .image {
@@ -160,13 +174,15 @@ footer {
 }
 
 .logo {
-    max-width: 250px;
+    max-width: 190px;
     float: left;
+    padding-top: 10px;
     margin: 5px 25px;
 }
 
 .profile-pic {
     max-width: 500px;
+    padding: 20px;
 }
 
 .social-media-icon {
@@ -224,12 +240,20 @@ footer {
     padding-left: 20px;
 }
 
+/* Spacing/Columns */
+
 .container {
     padding: 0 15px;
 }
 
+.container2 {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .row {
-    margin: 25px 0;
+    margin: 10px 0;
 }
 
 .row::after {
@@ -240,6 +264,23 @@ footer {
 
 [class*="col-"] {
     float: left;
+}
+
+/* Other Spacing */
+
+.contact-me p {
+    font-size: 18px;
+    margin: 3px;
+}
+
+.email {
+  padding: 20px;
+}
+
+.table-of-contents p {
+  margin: 1px;
+  text-align: center;
+  padding: 6px;
 }
 
 /* Lines */
@@ -257,23 +298,6 @@ hr.solid {
     margin-bottom: 26px;
     border: 2px solid #CAEBFA;
     border-radius: 6px;
-}
-
-/* Spacing */
-
-.contact-me p {
-    font-size: 18px;
-    margin: 3px;
-}
-
-.email {
-  padding: 20px;
-}
-
-.table-of-contents p {
-  margin: 1px;
-  text-align: center;
-  padding: 6px;
 }
 
 /* Links */
@@ -311,29 +335,36 @@ hr.solid {
     margin-top: 20px;
 }
 
+/* Table of Contents */
+
 #overview p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #purpose-and-context p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
-#design-process {
-  padding-left: 80px;
-  padding-right: 80px;
+#design-process p {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #objective p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #approach p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #approach img {
@@ -346,8 +377,8 @@ hr.solid {
 }
 
 #inspiration p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #inspiration img {
@@ -356,8 +387,9 @@ hr.solid {
 }
 
 #colors p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #colors img {
@@ -366,8 +398,9 @@ hr.solid {
 }
 
 #iconography p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #iconography img {
@@ -376,8 +409,9 @@ hr.solid {
 }
 
 #typography p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #typography img {
@@ -385,9 +419,10 @@ hr.solid {
   padding-top: 30px;
 }
 
-#buttons  p{
-  padding-left: 80px;
-  padding-right: 80px;
+#buttons  p {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #buttons img {
@@ -396,8 +431,9 @@ hr.solid {
 }
 
 #low-fidelty-wireframes p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #low-fidelty-wireframes img {
@@ -406,8 +442,10 @@ hr.solid {
 }
 
 #mid-fidelty-wireframes p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #mid-fidelty-wireframes img {
@@ -416,8 +454,9 @@ hr.solid {
 }
 
 #high-fidelty-wireframes p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #high-fidelty-wireframes img {
@@ -426,23 +465,26 @@ hr.solid {
 }
 
 #challenges p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #takeaways p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #conclusion p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
 #mock-ups p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Animation */
@@ -489,13 +531,10 @@ hr.solid {
     }
 }
 
+/* MEDIA QUERIES */
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
-
-  nav > ul {
-    margin: 1em 0;
-  }
 
     .col-md-6 {
         width: 50%;
@@ -528,6 +567,15 @@ hr.solid {
 
     .col-lg-5 {
         width: 40%;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+
+    .logo {
+        max-width: 250px;
+        padding-bottom: 10px;
     }
 
     .container {
